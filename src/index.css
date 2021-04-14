@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600;700;800&display=swap");
+
+body {
+  font-family: "montserrat", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Global */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 50px;
+  width: 70%;
+  min-height: 400px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: #21d07a;
+  color: #032541;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  line-height: 1.1;
+}
+
+.btn:hover {
+  background-color: #1aa762;
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Navbar */
+nav {
+  background-color: #002240;
+  color: #fff;
+  height: 70px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  color: #fff;
+  padding: 20px;
+  margin-top: 5px;
+  margin-left: 5px;
+  overflow: none;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+nav .flex {
+  justify-content: space-between;
+}
+
+nav .logo {
+  font-weight: 400;
+}
+
+/* Contact List */
+.contactlist {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.contactlist h1 {
+  margin: 45px 0;
+  font-weight: 400;
+}
+
+hr {
+  margin-bottom: 35px;
+  margin-top: 10px;
+  color: #f4f4f4;
+}
+
+.contactlist .flex > p {
+  margin: 0 100px;
+}
+
+.contactlist-out {
+  display: flex;
+  justify-content: center;
+}
+
+.contactlist-out > p {
+  color: #b8b8b8;
+  margin: 10px 100px;
+}
+
+/* Contact Form */
+.contactform {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.contactform h1 {
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 50%;
+  padding: 15px;
+  border: 0.5px solid #002240;
+  border-radius: 20px;
+  margin: 10px 0;
+}
+
+input[type="submit"] {
+  background: #002240;
+  color: aliceblue;
+}
+
+input[type="submit"]:hover {
+  background: #333;
+  color: aliceblue;
+}
+
+/* Inputs */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 95%;
+  }
+
+  .contactlist .flex > p {
+    margin: 0 20px;
+  }
+
+  .contactlist-out > p {
+    margin: 5px 20px;
+  }
+
+  input {
+    width: 95%;
+    padding: 15px;
+    border: 0.5px solid #002240;
+    border-radius: 20px;
+    margin: 10px 0;
+  }
+}
